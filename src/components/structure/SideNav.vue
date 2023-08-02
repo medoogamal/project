@@ -52,9 +52,9 @@ const emit = defineEmits(['closeSideNav'])
         </div>
         <div id="link" class="flex items-center justify-between hover:text-orange-300">
           <ChevronLeft />
-          <li class="cursor-pointer hover:text-[#fea555]">
-            {{ languageStore.lang.header['library'] }}
-          </li>
+         <router-link :to="`/${languageStore.lang}/library/maps`">
+            <li class="cursor-pointer hover:text-[#fea555]">{{ lang.header['library'] }}</li>
+          </router-link>
         </div>
         <div id="link" class="flex items-center justify-between hover:text-orange-300">
           <ChevronLeft />
